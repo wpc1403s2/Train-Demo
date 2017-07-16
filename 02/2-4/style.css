@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+.box-wrap{
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border:5px solid #e5e5e5;
+    background-color: peachpuff;
+    margin: 20px;
+}
+.normal{
+    box-sizing: content-box;
+}
+.weird{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.box-content{
+    width: 100px;
+    height: 100px;
+    background-color: #b7d6ff;
+}
+
+.old-box-h{
+    display:-webkit-box;
+    display:-moz-box;
+    margin: 10px;
+    width: 600px;
+    height: 150px;
+    -moz-box-orient: horizontal;
+    -webkit-box-orient: horizontal;
+    -ms-box-ordinal: horizontal;
+    -moz-box-direction: normal;
+    -webkit-box-direction: normal;
+}
+.item:nth-child(1){
+    flex: 3;
+    -webkit-flex:3;
+    -webkit-box-flex:3;
+    -moz-box-flex:3;
+    -ms-box-flex:3;
+    background: lavender;
+}
+.item:nth-child(2){
+    flex: 2;
+    -webkit-flex:2;
+    -webkit-box-flex:2;
+    -moz-box-flex:2;
+    -ms-box-flex:2;
+    background: lavenderblush;
+}
+.item:nth-child(3){
+    flex: 1;
+    -webkit-flex:1;
+    -webkit-box-flex:1;
+     -moz-box-flex:1;
+     -ms-box-flex:1;
+     background: lightcyan;
+    order:-1;
+ }
+.flex-box-v{
+    width: 600px;
+    height: 150px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.fixed{
+    width:800px;
+    -moz-columns:3;
+    -webkit-columns: 3;
+    columns: 3;
+    border:10px solid #f6d7dc;
+    margin: 10px;
+}
+
+.liquid{
+    border:10px solid #f6d7dc;
+    -moz-columns:200px;
+    -webkit-columns:200px;
+    columns:200px;
+    margin: 10px;
+}
+p{
+    margin: 0;
+    padding: 5px 10px;
+    background: #e5e5e5;
+}
+.old-wrap{
+    margin: 0 auto;
+    display:-webkit-box;
+    display:-moz-box;
+    width: 400px;
+    height: 300px;
+    background-color: #b7d6ff;
+    -webkit-box-pack:center;
+    -moz-box-pack:center;
+    -ms-box-pack:center;
+    -webkit-box-align:center;
+    -moz-box-align:center;
+    -ms-box-align:center;
+}
+.old-box-content{
+    width: 200px;
+    height: 200px;
+    background-color: #1bddbf;
+}

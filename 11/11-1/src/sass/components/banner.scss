@@ -1,0 +1,58 @@
+.banner{
+  width: 750px;
+  height: 330px;
+  float: left;
+  margin-bottom: 40px;
+  position: relative;
+  .screen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3000px;
+    li {
+      width: 750px;
+      height: 330px;
+      overflow: hidden;
+      float: left;
+    }
+  }
+  img {
+    width:100%;
+    height:100%;
+  }
+  ol {
+    position: absolute;
+    display: block;
+    left: 330px;
+    bottom: 20px;
+    text-align: center;
+    /*width: 100%;*/
+    z-index: 9999;
+    height: 20px;
+    width: 100px;
+    cursor: pointer;
+    li {
+      display: inline-block;
+      margin-right: 8px;
+      text-align: center;
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    li.switch-active {
+      width: 8px;
+      height: 16px;
+      background: $green;
+      position: relative;
+      top: -4px
+    }
+  }
+}

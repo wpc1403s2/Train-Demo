@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+    /*1.用户输入一个数判断是否在10-100之间 包含10和100*/
+    var num = prompt("请输入一个数字");
+    if (num >= 10 && num <= 100) {
+        console.log("在10-100之间")
+    } else {
+        console.log("不在10-100之间")
+    }
+    /*2.用户输入3个数，用三元表达式找出之间最大的一个数*/
+    var a = prompt("第一个数");
+    var b = prompt("第二个数");
+    var c = prompt("第三个数");
+    a = parseInt(a);
+    a = parseInt(b);
+    a = parseInt(c);
+    console.log((a > b ? a : b) > c ? (a > b ? a : b) : c);
+    /*3.使用for循环找出1-100中可以被7整除和4整除的数在控制台打印出来*/
+    for (var i = 1; i < 100; i++) {
+        if (i % 4 == 0 || i % 7 == 0) {
+            console.log(i);
+        }
+    }
+    /*4.用户输入用户名和密码如果用户名等于admin 或者密码等于888就提示登录成功否者提示登录失败*/
+    var name = prompt("请输入用户名");
+    var password = prompt("请输入密码");
+    if (name == "admin" || password == "888") {
+        console.log("登录成功")
+    } else {
+        console.log("登录失败")
+    }
+    /*5.假设今天是星期6，使用程序计算1000天之后是星期几*/
+    console.log("1000天之后是星期" + (6 + 1000 % 7) % 7);
+    /*6.用户输入一个3位数的数字分别打印出 个 十 百 位*/
+    var num = prompt("请输入一个3位数");
+    console.log("个位" + parseInt(num % 10) + "十位" + parseInt(num / 10 % 10) + "百位" + parseInt(num / 100));
+    /*7.控制台打印1-100以内的质数*/
+    for (var i = 1; i < 100; i++) {
+        for (var j = 2; j < i; j++) {
+            if (i % j == 0) {
+                break;
+            }
+        }
+        if (i == j) {
+            console.log(i)
+        }
+    }
+    /*8.用户输入一个数字，判断一个数字是不是3的倍数*/
+    var num = prompt("请输入一个数字");
+    if (num % 3 == 0) {
+        console.log("是3的倍数")
+    } else {
+        console.log("不是3的倍数");
+    }
+    /*9.用JS计算下列算式，并将结果在控制台输出:*/
+    console.log((123 + 45 * 78) / (34 + 543) - 9 * (324 - 34));
+    /*10.世界上有表示气温有两种方法:摄氏度和华氏度。两者的关系是
+              华氏度 = 9/5*摄氏度+32*/
+    var wendu = prompt("请输入摄氏度");
+    console.log("华氏度" + (9 / 5 * wendu + 32));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+.login {
+  margin-top: 15px;
+  float: right;
+  width: 240px;
+  height: 160px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #e9e9e9;
+  padding: 25px;
+}
+.login .userInfo {
+  overflow: hidden;
+  width: 175px;
+}
+.login .userInfo a {
+  display: inline-block;
+  float: left;
+}
+.login .userInfo img {
+  float: left;
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+}
+.login .userInfo .userTxt {
+  margin-top: 7px;
+  margin-left: 7px;
+  font-size: 12px;
+  color: #555;
+  float: left;
+  width: 108px;
+  height: 16px;
+  line-height: 16px;
+}
+.login .login-btn {
+  margin-top: 20px;
+  margin-right: 9px;
+  float: left;
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 85px;
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #35b558;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #35b558;
+  background: #ffffff;
+  transition: background .5s;
+}
+.login .login-btn:hover {
+  color: white;
+  background: #35b558;
+}

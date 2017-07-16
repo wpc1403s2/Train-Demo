@@ -1,0 +1,8 @@
+@import "compass/utilities/sprites";
+$headerIcon-sprite-dimensions:true;
+@import "headerIcon/*.png";
+@include all-headerIcon-sprites();
+
+@import "college/*.png";
+$college-sprite-dimensions:true;
+@include all-college-sprites();

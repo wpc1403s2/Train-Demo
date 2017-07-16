@@ -1,0 +1,22 @@
+{
+  "name": "jike-page",
+  "version": "1.0.0",
+  "description": "jike task 10",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wpc",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^2.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}

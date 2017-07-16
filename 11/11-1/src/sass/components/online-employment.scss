@@ -1,0 +1,24 @@
+@import "../helpers/mixin";
+
+.online-employment{
+  @include online-employment;
+  overflow: hidden;
+  margin-bottom: 40px;
+  a:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .4)
+  }
+  .klass {
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    width: 250px;
+    height: 75px;
+    line-height: 75px;
+    margin: 0 10px 10px 0;
+    padding-left: 120px;
+    p {
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}

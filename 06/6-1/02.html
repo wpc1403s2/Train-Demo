@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/knockout-3.4.2.js"></script>
+</head>
+<body>
+
+<div class="calculator">
+    <p>计算器</p>
+    <!--显示区-->
+    <h3 data-bind="text: commandline"></h3>
+    <!--运算符-->
+    <div data-bind="foreach: commands" class="commands">
+        <button data-bind="value: command, text: command, click: $parent.addCommand, disable: $parent.hasNumbers"></button>
+    </div>
+    <div data-bind="foreach: operator" class="operator">
+        <button data-bind="value: command, text: command, click: $parent.addCommand, disable: $parent.hasNumbers"></button>
+    </div>
+    <!--数字键-->
+    <div data-bind="foreach: numbers" class="numbers">
+        <button data-bind="value: val, text: val, click: $parent.addNumber"></button>
+    </div>
+    <button data-bind="click: ClearAll" class="clear-all">清除</button>
+    <button data-bind="click: doCalculate" class="equal">=</button>
+</div>
+<script src="js/demo.js"></script>
+</body>
+</html>

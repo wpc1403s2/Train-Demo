@@ -1,0 +1,35 @@
+.gotop{
+  left: 50%;
+  margin-left: 510px;
+  bottom: 50px;
+  width: 34px;
+  text-align: center;
+  z-index: 9999;
+  position: fixed;
+  .top {
+    display: block;
+    background: url("/images/gotop.jpg") top center no-repeat;
+    background-size: 34px 103px;
+    width: 34px;
+    height: 34px;
+    &:hover{
+      background: url("/images/gotop2.jpg") top center no-repeat;
+      background-size: 34px 103px;
+    }
+  }
+  span {
+    cursor: pointer;
+  }
+  .jk-app {
+    display: block;
+    background: url("/images/phone.png") no-repeat center center;
+    background-size: 12px 24px;
+    width: 34px;
+    height: 34px;
+    border-bottom: 1px solid #e0e0e0;
+    &:hover{
+      background: url("/images/phone_hover.png") no-repeat center center;
+      background-size: 12px 24px;
+    }
+  }
+}

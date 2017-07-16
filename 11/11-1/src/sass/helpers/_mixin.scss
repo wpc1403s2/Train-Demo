@@ -1,0 +1,52 @@
+@charset "UTF-8";
+$list: jiuye-java jiuye-php jiuye-web jiuye-ux;
+/*精品课背景图*/
+@mixin online-employment {
+  @each $courses in $list {
+    .#{$courses} {
+      background: url("/images/#{$courses}.png") no-repeat center center;
+    }
+  }
+}
+
+@mixin content($height:auto) {
+  width: 1000px;
+  margin: 0 0 40px 0;
+  box-sizing: border-box;
+  height: $height;
+}
+/*就业班背景颜色*/
+@mixin li-color($color) {
+  li:nth-child(2n+1) {
+    background: darken($color, 5%);
+
+  }
+  li:nth-child(2n) {
+    background: $color;
+  }
+}
+/*就业班logo*/
+@mixin ek-logo($name) {
+  $num: 1 2 4 5;
+  @each $n in $num {
+    li:nth-child(#{$n}) {
+      a span {
+        width: 31px;
+        height: 28px;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background: url("/images/#{$name}-0#{$n}.png") no-repeat center center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+/*就业班左侧大图样式*/
+@mixin li-3($bg) {
+  position: relative;
+  width: 478px;
+  height: 278px;
+  float: left;
+  background: url("/images/#{$bg}.png") no-repeat center center;
+  background-size: 480px 278px;
+}

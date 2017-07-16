@@ -1,0 +1,237 @@
+.s-xmancard-nav {
+    position: relative;
+    padding: 10px 0 13px 25px
+}
+
+.s-nav-wrapper {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.s-nav-wrapper h1 {
+    font-size: 14px;
+    text-align: left;
+    margin: 0 0 5px 11px;
+    padding-top: 25px
+}
+
+.s-nav-wrapper .s-nav-area {
+}
+
+.s-nav-wrapper .nav-item {
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin-right: 15px;
+    margin-top: 15px;
+    _margin-right: 12px;
+    position: relative
+}
+
+.s-nav-wrapper .nav-item:hover .nav-block {
+    border-color: #f0f0f0;
+    border-color: rgba(0, 0, 0, .05)
+}
+
+.s-nav-wrapper .nav-item .nav-block {
+    position: relative;
+    display: block;
+    height: 65px;
+    line-height: 65px;
+    width: 126px;
+    background-color: #fcfcfc
+}
+
+.s-nav-wrapper .nav-item a img {
+    position: absolute;
+    left: 5px;
+    top: -2px
+}
+
+.s-nav-wrapper .nav-item .nav-txt {
+    font-size: 13px;
+    color: #333;
+    padding-left: 38px
+}
+
+.s-nav-wrapper .nav-item-ns a img {
+    top: 19px;
+    left: 17px
+}
+
+.s-nav-wrapper .nav-block {
+    border: 1px solid #fcfcfc
+}
+
+#s_xmancard_nav .water-container .s-nav-wrapper .s-nav-area .nav-item .nav-block:hover {
+    text-decoration: none
+}
+
+.sub-anipic {
+    background-color: #f9f9f9
+}
+
+.s-nav-wrapper .nav-item .top-line {
+    position: absolute;
+    top: 0;
+    height: 1px;
+    background-color: #38f
+}
+
+.sub-anipic-1 {
+    border: 1px solid #eee
+}
+
+.s-nav-wrapper .s-nav-area .nav-item .subscribe .sub-bg {
+    display: none !important
+}
+
+.s-nav-wrapper .s-nav-area .nav-item .subscribe .sub .sub-star {
+    background-position: -65px -52px;
+    top: 5px;
+    left: 5px
+}
+
+.s-nav-wrapper .s-nav-area .nav-item .subscribe .unsub .sub-star {
+    background-position: -66px -30px;
+    top: 5px;
+    left: 5px;
+    height: 18px
+}
+
+.s-nav-wrapper .nav-item .tag {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.s-nav-wrapper .nav-item .juhui {
+    width: 38px;
+    height: 39px;
+    background: url("../../img/nav/juhui_468759f7.png") no-repeat 0 0
+}
+
+.s-nav-wrapper .nav-item .rebate {
+    position: absolute;
+    display: none;
+    width: 100%;
+    _width: 128px;
+    left: 0;
+    bottom: 0;
+    font-size: 12px;
+    text-align: center;
+    height: 18px;
+    line-height: 18px;
+    color: #fff;
+    background: #ff8300
+}
+
+.s-nav-wrapper .nav-item .rebate a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: underline
+}
+
+.s-nav-wrapper .nav-item .rebate-hover {
+    background: #ff6300;
+    filter: none;
+    color: #fff;
+    z-index: 1000;
+    zoom: 1
+}
+
+.s-xmancard-nav .s-nav-wrapper .nav-item .fanli-tag {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    background: url("../../img/nav/fanli_40794035.png") repeat 0 0
+}
+
+.s-xmancard-nav .s-nav-wrapper .nav-item .fanli-tag a {
+    display: inline-block;
+    height: 16px;
+    width: 16px
+}
+
+.s-xmancard-nav .normal-patern .s-nav-wrapper .fanli-nav .fanli-tag {
+    display: none
+}
+
+.s-xmancard-nav .fanli-patern .s-nav-wrapper .fanli-nav .fanli-tag {
+    display: block
+}
+
+.s-xmancard-nav .nav-tips {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -122px;
+    height: 32px;
+    line-height: 32px;
+    _line-height: 35px;
+    width: 244px;
+    border: 1px solid #e3e3e3;
+    text-align: center;
+    box-shadow: 3px 3px 2px rgba(227, 227, 227, .25);
+    -moz-box-shadow: 3px 3px 2px rgba(227, 227, 227, .25);
+    -webkit-box-shadow: 3px 3px 2px rgba(227, 227, 227, .25);
+    text-align: center;
+    background: #fff
+}
+
+.s-xmancard-nav .nav-tips .nav-tips-closer {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -5px;
+    height: 11px;
+    width: 11px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wodEA4xFAQdfQAAADNJREFUGNNjmDVr1n8GIgBcHSENGPK4NOA0CF2CoBNhCoj1C+kKiXYCyZ4jOdhIjhBkDQDV2TrS+RNR8AAAAABJRU5ErkJggg==);
+    *background: url(../../img/nav/close_e00205af.png) no-repeat;
+    cursor: pointer
+}
+
+.s-xmancard-nav .nav-tips span a {
+    color: #007df9;
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.s-nav-personal h1 {
+    margin: 8px 0 4px;
+    padding: 0
+}
+
+.s-nav-personal .nav-item .nav-block {
+    height: 58px;
+    line-height: 58px;
+    width: 126px
+}
+
+.s-nav-personal .nav-item a img {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    width: 16px
+}
+
+.s-nav-personal .nav-item .nav-txt {
+    position: absolute;
+    text-align: left;
+    left: 44px;
+    color: #333;
+    font-size: 14px;
+    padding: 0;
+    max-width: 71px;
+    _width: 71px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block
+}

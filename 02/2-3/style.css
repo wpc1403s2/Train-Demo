@@ -1,0 +1,99 @@
+body {
+    font: 14px "Microsoft YaHei", "微软雅黑", "宋体", helvetica, "Hiragino Sans GB";
+    margin: 0;
+    padding: 0;
+    background: #d5d5d5;
+}
+.star{
+    color: red;
+}
+.top{
+    height: 80px;
+}
+.top a{
+    text-decoration: none;
+    color: red;
+    padding: 0 5px;
+}
+.bg{
+    background-image: url("beijin1.gif");
+}
+.top-left{
+    margin-top: 30px;
+    float: right;
+}
+.wrap {
+    padding: 30px;
+    display: block;
+    width: 710px;
+    margin: 100px auto;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;;
+    background: #ffffff;
+}
+
+.table-1 {
+    width: 710px;
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.title-box{
+    background-color: rgb(238, 238, 238);;
+}
+.td-title{
+    color: #039;
+    font-weight:800;
+    float: left;
+}
+.table-2 {
+    width: 710px;
+    border: 1px solid #9c9c9c;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+    border: 1px solid #9c9c9c;
+    padding: 10px;
+}
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+.tableBorder{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.tableBorder td{
+    border-bottom: 1px solid #9c9c9c;
+    border-left: 0;
+    border-right: 0;
+}
+td.tableBorder-box{
+    padding: 0;
+}
+td.area-wrap{
+    border-bottom: 1px solid #9c9c9c;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+}
+.area-box{
+    padding: 10px;
+    border-bottom: 1px solid #d5d5d5;
+}
+.area-wrap span{
+    border-left: 1px solid #9c9c9c;
+    border-right: 1px solid #9c9c9c;
+}
+.blue{
+    color:blue;
+}

@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/*精品课背景图*/
+/*就业班背景颜色*/
+/*就业班logo*/
+/*就业班左侧大图样式*/
+.excellent-courses {
+  width: 1000px;
+  margin: 0 0 40px 0;
+  box-sizing: border-box;
+  height: auto;
+}
+.excellent-courses p {
+  padding: 0;
+  margin: 0;
+}
+.excellent-courses ul {
+  width: 100%;
+  height: 270px;
+}
+.excellent-courses li {
+  background: #ffffff;
+  float: left;
+  width: 235px;
+  height: 100%;
+  border: 1px solid #e9e9e9;
+  margin-right: 17px;
+  transition: all .5s;
+}
+.excellent-courses li:last-child {
+  margin-right: 0;
+}
+.excellent-courses li:hover {
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.excellent-courses li a {
+  display: inline-block;
+  height: 100%;
+}
+.excellent-courses li img {
+  width: 100%;
+  height: 155px;
+}
+.excellent-courses .skuContainer {
+  padding: 14px;
+  font-size: 12px;
+  height: 36px;
+  line-height: 18px;
+  color: #555555;
+}
+.excellent-courses .skuContainer .skuTitle {
+  width: 100%;
+  overflow: hidden;
+  height: 30px;
+  line-height: 18px;
+}
+.excellent-courses .skuContainer .skuInfo {
+  margin-top: 6px;
+  color: #999999;
+  font-size: 12px;
+  height: 16px;
+  line-height: 16px;
+}
+.excellent-courses .skuContainer .skuThrought {
+  color: #999999;
+  float: left;
+  font-size: 12px;
+  margin-top: 10px;
+  text-decoration: line-through;
+  vertical-align: bottom;
+}
+.excellent-courses .skuContainer .skuNum {
+  color: #999999;
+  position: relative;
+  top: 10px;
+  float: right;
+}
+.excellent-courses .skuContainer .skuPrice {
+  margin-top: 8px;
+  margin-right: 5px;
+  float: left;
+  font-size: 18px;
+  color: #FF5C00;
+}

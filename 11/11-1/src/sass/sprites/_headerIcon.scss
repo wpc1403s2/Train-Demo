@@ -1,0 +1,145 @@
+@import "compass/utilities/sprites/base";
+
+// General Sprite Defaults
+// You can override them before you import this file.
+$headerIcon-sprite-dimensions : false !default;
+$headerIcon-use-percentages   : false !default;
+$headerIcon-position          : 0% !default;
+$headerIcon-spacing           : 0 !default;
+$headerIcon-repeat            : no-repeat !default;
+$headerIcon-prefix            : '' !default;
+$headerIcon-clean-up          : true !default;
+$headerIcon-layout            : vertical !default;
+$headerIcon-inline            : false !default;
+$headerIcon-sort-by           : 'none' !default;
+$headerIcon-class-separator   : $default-sprite-separator !default;
+$headerIcon-sprite-base-class : ".headerIcon#{$headerIcon-class-separator}sprite" !default;
+
+  
+ // These variables control the generated sprite output
+ // You can override them selectively before you import this file.
+ 
+   $headerIcon-app-position: $headerIcon-position !default;
+   $headerIcon-app-spacing:  $headerIcon-spacing !default;
+   $headerIcon-app-repeat:   $headerIcon-repeat !default;
+ 
+   $headerIcon-app_hover-position: $headerIcon-position !default;
+   $headerIcon-app_hover-spacing:  $headerIcon-spacing !default;
+   $headerIcon-app_hover-repeat:   $headerIcon-repeat !default;
+ 
+   $headerIcon-msg-position: $headerIcon-position !default;
+   $headerIcon-msg-spacing:  $headerIcon-spacing !default;
+   $headerIcon-msg-repeat:   $headerIcon-repeat !default;
+ 
+   $headerIcon-msg_hover-position: $headerIcon-position !default;
+   $headerIcon-msg_hover-spacing:  $headerIcon-spacing !default;
+   $headerIcon-msg_hover-repeat:   $headerIcon-repeat !default;
+ 
+   $headerIcon-phone-position: $headerIcon-position !default;
+   $headerIcon-phone-spacing:  $headerIcon-spacing !default;
+   $headerIcon-phone-repeat:   $headerIcon-repeat !default;
+ 
+   $headerIcon-phone_hover-position: $headerIcon-position !default;
+   $headerIcon-phone_hover-spacing:  $headerIcon-spacing !default;
+   $headerIcon-phone_hover-repeat:   $headerIcon-repeat !default;
+ 
+   $headerIcon-search-position: $headerIcon-position !default;
+   $headerIcon-search-spacing:  $headerIcon-spacing !default;
+   $headerIcon-search-repeat:   $headerIcon-repeat !default;
+ 
+   $headerIcon-search_hover-position: $headerIcon-position !default;
+   $headerIcon-search_hover-spacing:  $headerIcon-spacing !default;
+   $headerIcon-search_hover-repeat:   $headerIcon-repeat !default;
+ 
+
+ $headerIcon-sprites: sprite-map("headerIcon/*.png",
+ 
+   $headerIcon-app-position: $headerIcon-app-position, 
+   $headerIcon-app-spacing:  $headerIcon-app-spacing, 
+   $headerIcon-app-repeat:   $headerIcon-app-repeat,
+ 
+   $headerIcon-app_hover-position: $headerIcon-app_hover-position, 
+   $headerIcon-app_hover-spacing:  $headerIcon-app_hover-spacing, 
+   $headerIcon-app_hover-repeat:   $headerIcon-app_hover-repeat,
+ 
+   $headerIcon-msg-position: $headerIcon-msg-position, 
+   $headerIcon-msg-spacing:  $headerIcon-msg-spacing, 
+   $headerIcon-msg-repeat:   $headerIcon-msg-repeat,
+ 
+   $headerIcon-msg_hover-position: $headerIcon-msg_hover-position, 
+   $headerIcon-msg_hover-spacing:  $headerIcon-msg_hover-spacing, 
+   $headerIcon-msg_hover-repeat:   $headerIcon-msg_hover-repeat,
+ 
+   $headerIcon-phone-position: $headerIcon-phone-position, 
+   $headerIcon-phone-spacing:  $headerIcon-phone-spacing, 
+   $headerIcon-phone-repeat:   $headerIcon-phone-repeat,
+ 
+   $headerIcon-phone_hover-position: $headerIcon-phone_hover-position, 
+   $headerIcon-phone_hover-spacing:  $headerIcon-phone_hover-spacing, 
+   $headerIcon-phone_hover-repeat:   $headerIcon-phone_hover-repeat,
+ 
+   $headerIcon-search-position: $headerIcon-search-position, 
+   $headerIcon-search-spacing:  $headerIcon-search-spacing, 
+   $headerIcon-search-repeat:   $headerIcon-search-repeat,
+ 
+   $headerIcon-search_hover-position: $headerIcon-search_hover-position, 
+   $headerIcon-search_hover-spacing:  $headerIcon-search_hover-spacing, 
+   $headerIcon-search_hover-repeat:   $headerIcon-search_hover-repeat,
+ 
+ $layout   : $headerIcon-layout,
+ $cleanup  : $headerIcon-clean-up,
+ $spacing  : $headerIcon-spacing,
+ $position : $headerIcon-position,
+ $sort-by  : $headerIcon-sort-by
+ );
+
+
+// All sprites should extend this class
+// The headerIcon-sprite mixin will do so for you.
+@if $headerIcon-inline {
+  #{$headerIcon-sprite-base-class} {
+    background-image: inline-sprite($headerIcon-sprites);
+  } 
+} @else {
+  #{$headerIcon-sprite-base-class} {
+    background-image: sprite-url($headerIcon-sprites);
+    background-repeat: no-repeat;
+  }
+}
+//sass functions to return the dimensions of a sprite image as units
+
+  @function headerIcon-sprite-width($name) {
+    @return sprite-width($headerIcon-sprites, $name);
+  }
+
+  @function headerIcon-sprite-height($name) {
+    @return sprite-height($headerIcon-sprites, $name);
+  }
+
+
+// Use this to set the dimensions of an element
+// based on the size of the original image.
+@mixin headerIcon-sprite-dimensions($name) {
+  @include sprite-dimensions($headerIcon-sprites, $name)
+}
+
+// Move the background position to display the sprite.
+@mixin headerIcon-sprite-position($name, $offset-x: 0, $offset-y: 0, $use-percentages: $headerIcon-use-percentages) {
+  @include sprite-background-position($headerIcon-sprites, $name, $offset-x, $offset-y, $use-percentages)
+}
+
+// Extends the sprite base class and set the background position for the desired sprite.
+// It will also apply the image dimensions if $dimensions is true.
+@mixin headerIcon-sprite($name, $dimensions: $headerIcon-sprite-dimensions, $offset-x: 0, $offset-y: 0, $use-percentages: $headerIcon-use-percentages, $separator: $headerIcon-class-separator) {
+  @extend #{$headerIcon-sprite-base-class};
+  @include sprite($headerIcon-sprites, $name, $dimensions, $offset-x, $offset-y, $use-percentages, $separator: $separator);
+}
+
+@mixin headerIcon-sprites($sprite-names, $dimensions: $headerIcon-sprite-dimensions, $prefix: sprite-map-name($headerIcon-sprites), $offset-x: 0, $offset-y: 0, $use-percentages: $headerIcon-use-percentages, $separator: $headerIcon-class-separator) {
+  @include sprites($headerIcon-sprites, $sprite-names, $headerIcon-sprite-base-class, $dimensions, $prefix, $offset-x, $offset-y, $use-percentages, $separator: $separator)
+}
+
+// Generates a class for each sprited image.
+@mixin all-headerIcon-sprites($dimensions: $headerIcon-sprite-dimensions, $prefix: sprite-map-name($headerIcon-sprites), $offset-x: 0, $offset-y: 0, $use-percentages: $headerIcon-use-percentages, $separator: $headerIcon-class-separator) {
+  @include headerIcon-sprites(app app_hover msg msg_hover phone phone_hover search search_hover, $dimensions, $prefix, $offset-x, $offset-y, $use-percentages, $separator: $separator);
+}

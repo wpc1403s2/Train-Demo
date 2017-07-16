@@ -1,0 +1,71 @@
+.header {
+  background: #ffffff;
+  height: 60px;
+  border-bottom: 1px solid #ececec;
+}
+.header .w-1000 {
+  width: 1000px;
+  margin: 0 auto;
+  line-height: 60px;
+}
+.header a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.header .img-box img {
+  margin-top: 10px;
+  width: 109px;
+  float: left;
+}
+.header .nav-lists {
+  margin: 0 0 0 60px;
+  /*width: 200px;*/
+  height: 60px;
+  display: inline-block;
+  float: left;
+}
+.header .nav-lists li {
+  list-style: none;
+  font-size: 14px;
+  float: left;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.header .nav-lists li .down-icon {
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #c1c1c1;
+  border-left: 1px solid #c1c1c1;
+  display: inline-block;
+  transform: rotate(-135deg);
+  transform-origin: 4px 4px;
+  transition: transform .5s;
+}
+.header .nav-lists li .down-icon:hover {
+  transform: rotate(45deg);
+  transform-origin: 4px 4px;
+}
+.header .nav-lists li:hover {
+  color: #35b558;
+}
+.header .icon-box {
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  margin-right: 10px;
+  text-align: right;
+}
+.header .icon-box span {
+  float: right;
+  width: 40px;
+  margin-top: 15px;
+  line-height: 60px;
+  display: inline-block;
+}
+.header .icon-box span.headerIcon-msg {
+  margin-top: 23px;
+}
+.header .headerIcon-app, .header .headerIcon-search {
+  transform: scale(0.5);
+}

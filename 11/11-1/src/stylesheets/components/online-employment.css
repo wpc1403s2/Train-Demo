@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*精品课背景图*/
+/*就业班背景颜色*/
+/*就业班logo*/
+/*就业班左侧大图样式*/
+.online-employment {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.online-employment .jiuye-java {
+  background: url("/images/jiuye-java.png") no-repeat center center;
+}
+.online-employment .jiuye-php {
+  background: url("/images/jiuye-php.png") no-repeat center center;
+}
+.online-employment .jiuye-web {
+  background: url("/images/jiuye-web.png") no-repeat center center;
+}
+.online-employment .jiuye-ux {
+  background: url("/images/jiuye-ux.png") no-repeat center center;
+}
+.online-employment a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.online-employment .klass {
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  width: 250px;
+  height: 75px;
+  line-height: 75px;
+  margin: 0 10px 10px 0;
+  padding-left: 120px;
+}
+.online-employment .klass p {
+  text-align: center;
+  color: #ffffff;
+}

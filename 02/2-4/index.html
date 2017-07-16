@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--正常与怪异盒子-->
+<div class="flex-wrap">
+    <div class="box-wrap normal">
+        <div class="box-content">正常盒子</div>
+    </div>
+    <div class="box-wrap weird">
+        <div class="box-content">怪异盒子</div>
+    </div>
+</div>
+<!--旧盒模型水平分布-->
+<div class="old-box-h ">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+<!--新盒模型竖直分布-->
+<div class="flex-box-v">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+<!--液态分布列数-->
+<div class="liquid">
+    <p>列宽固定，根据容器宽度液态分布列数:n the Web, tables have also been used to describe multi-column layouts. The main benefit of
+        using CSS-based columns is flexibility; content can flow from one column to another, and the number of columns
+        can vary depending on the size of the viewport. Removing presentation table markup from documents allows them to
+        more easily be presented on various output devices including speech synthesizers and small mobile devices.</p>
+    <p>This module describes multi-column layout in CSS. By using functionality described in this document, style sheets
+        can declare that the content of an element is to be laid out in multiple columns.</p>
+    <p>This module describes multi-column layout in CSS. By using functionality described in this document, style sheets
+        can declare that the content of an element is to be laid out in multiple columns.This module describes
+        multi-column layout in CSS. By using functionality described in this document, style sheets can declare that the
+        content of an element is to be laid out in multiple columns.</p>
+</div>
+<!--列数及列宽固定-->
+<div class="fixed">
+    <p>列数及列宽固定n the Web, tables have also been used to describe multi-column layouts. The main benefit of using
+        CSS-based columns is flexibility; content can flow from one column to another</p>
+    <p>This module describes multi-column layout in CSS. By using functionality described in this document, style sheets
+        can declare that the content of an element is to be laid out in multiple columns.</p>
+    <p>This module describes multi-column layout in CSS. By using functionality described in this document, style sheets
+        can declare that the content of an element is to be laid out in multiple columns.This module describes
+        multi-column layout in CSS. By using functionality described in this document, style sheets can declare that the
+        content of an element is to be laid out in multiple columns.</p>
+</div>
+<!--旧盒模型垂直水平居中-->
+<div class="old-wrap">
+    <div class="old-box-content"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="template.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="wrapper" id="classDate">
+
+    </div>
+</div>
+<!--模版拼接-->
+<script id="shedule" type="text/html">
+    <table>
+        <caption>课程表</caption>
+        <thead>
+        <tr>
+            <th colspan="2"></th>
+            <th>星期一</th>
+            <th>星期二</th>
+            <th>星期三</th>
+            <th>星期四</th>
+            <th>星期五</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="5">上午</td>
+        </tr>
+        {{each course as value i}}
+        <tr>
+            <td>{{value.time}}</td>
+            <td>{{value.monday}}</td>
+            <td>{{value.tuesday}}</td>
+            <td>{{value.Wednesday}}</td>
+            <td>{{value.Thursday}}</td>
+            <td>{{value.Friday}}</td>
+        </tr>
+        {{if i==3}}
+        <tr>
+            <td colspan="7">午休</td>
+        </tr>
+        <tr>
+            <td rowspan="3">下午</td>
+        </tr>
+        {{/if}}
+        {{/each}}
+        </tbody>
+    </table>
+
+</script>
+<!--/模版拼接-->
+<script type="text/javascript">
+    var data = {
+        course: [
+            {
+                time: '8:00-8:45',
+                monday: '语文',
+                tuesday: '数学',
+                Wednesday: '英语',
+                Thursday: '语文',
+                Friday: '英语'
+            },
+            {
+                time: '9:00-9:45',
+                monday: '语文',
+                tuesday: '数学',
+                Wednesday: '语文',
+                Thursday: '数学',
+                Friday: '语文'
+            },
+            {
+                time: '10:00-10:45',
+                monday: '数学',
+                tuesday: '语文',
+                Wednesday: '语文',
+                Thursday: '英语',
+                Friday: '数学'
+
+            },
+            {
+                time: '11:00-11:45',
+                monday: '语文',
+                tuesday: '语文',
+                Wednesday: '数学',
+                Thursday: '语文',
+                Friday: '语文'
+            },
+            {
+                time: '2：30-3:15',
+                monday: '英语',
+                tuesday: '英语',
+                Wednesday: '体育',
+                Thursday: '英语',
+                Friday: '语文'
+            },
+            {
+                time: '3：30-4:15',
+                monday: '数学',
+                tuesday: '体育',
+                Wednesday: '数学',
+                Thursday: '数学',
+                Friday: '数学'
+            }
+        ]
+
+    };
+    var html = template('shedule', data);
+    document.getElementById('classDate').innerHTML = html;
+</script>
+</body>
+</html>

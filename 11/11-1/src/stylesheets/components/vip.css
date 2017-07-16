@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/*精品课背景图*/
+/*就业班背景颜色*/
+/*就业班logo*/
+/*就业班左侧大图样式*/
+.vip {
+  width: 1000px;
+  margin: 0 0 40px 0;
+  box-sizing: border-box;
+  height: 420px;
+}
+.vip ul {
+  width: 100%;
+  height: 310px;
+}
+.vip ul li {
+  box-sizing: border-box;
+  float: left;
+  width: 158px;
+  height: 150px;
+  border: 1px solid #e9e9e9;
+  background: #ffffff;
+  margin-right: 10px;
+  transition: all .5s;
+}
+.vip ul li:hover {
+  box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.vip ul li:nth-child(n+7) {
+  margin-top: 10px;
+}
+.vip ul li:nth-child(6n) {
+  margin-right: 0;
+}
+.vip ul a {
+  display: block;
+  text-align: center;
+}
+.vip ul a img {
+  width: 55px;
+  height: 55px;
+  margin-top: 25px;
+}
+.vip ul a p {
+  margin: 0;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+}
+.vip ul a p:nth-child(2) {
+  color: #555555;
+}
+.vip ul a p:nth-child(3) {
+  color: #35b558;
+}
+.vip .vipAll {
+  display: inline-block;
+  margin-top: 38px;
+  height: 32px;
+  line-height: 30px;
+  border: 1px solid #35b558;
+  border-radius: 2px;
+  width: 120px;
+  font-size: 14px;
+  color: #35b558;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  margin-left: -60px;
+  transition: background .8s;
+}
+.vip .vipAll:hover {
+  background: #35b558;
+  color: #fff;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>login</title>
+    <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="gray-bg">
+<!--登录页面-->
+<div class="container">
+<div class="middle-box text-center animated fadeInDown">
+    <div>
+        <h1 class="logo-name">文章管理+</h1>
+    </div>
+        <p class="text-left">请登录 :)</p>
+    <form action="login.html" class="form-box m-t" id="login">
+        <div class="form-group"><input type="text" class="form-control" placeholder="用户名" name="userName" id="user_name"></div>
+        <div class="form-group"><input type="password" class="form-control" placeholder="密码" name="userPwd"></div>
+        <div class="checkbox i-checks text-muted">
+            <label for="">
+                <div>
+                    <input type="checkbox" class="" id="expires">
+                    <ins class="iCheckbox"></ins>
+                </div>
+                <i></i>
+                七天内登录有效
+            </label>
+        </div>
+        <button class="btn btn-green full-width m-b">登录</button>
+    </form>
+    <a href="register.html">没有账号 >>注册</a>
+</div>
+</div>
+<script src="dist/jquery/jquery.js"></script>
+<script src="dist/bootstrap/js/bootstrap.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

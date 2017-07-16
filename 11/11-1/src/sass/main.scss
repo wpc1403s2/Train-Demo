@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+@import
+"compass"
+, "susy"
+, "normalize-version"
+, "normalize/base"
+, "normalize/links"
+, "normalize/html5"
+;
+
+@import "helpers/mixin";
+
+@import "helpers/variables";
+@import "helpers/icons";
+
+/*布局*/
+@import "base/base";
+
+/*组件*/
+@import "components/header";
+@import "components/banner";
+@import "components/login";
+@import "components/online-employment";
+@import "components/excellent-courses";
+@import "components/employment-klass";
+@import "components/college";
+@import "components/vip";
+@import "components/story";
+@import "components/partner";
+@import "components/footer";
+@import "components/gotop";
